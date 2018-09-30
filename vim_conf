@@ -3,7 +3,11 @@
 1. set up vundle
   $git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
   $git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-2.put vimrc
+2.put vimrc into $home/.vim/vimrc
+3.vim -> :BundleInstall
+
+
+
   
 
 
@@ -13,5 +17,5 @@
 
 
 **********vim info**************
-(1)$home/.vimrc 优先级高于$home/.vim/vimrc, 第一个存在第二个就没有用了
-(2)
+(1)$home/.vimrc 优先级高于$home/.vim/vimrc, 第一个存在第二个就没有用了.
+(2)vim粘贴会出现上一行注释影响下一行，可以粘贴前set paste.
