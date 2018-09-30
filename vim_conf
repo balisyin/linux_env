@@ -1,5 +1,10 @@
 
-
+********vim bundle*************
+1. set up vundle
+  $git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+  $git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+2.put vimrc
+  
 
 
 
