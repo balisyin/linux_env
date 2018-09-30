@@ -1,0 +1,32 @@
+1.code update with docker,use SFTP,ctrl+shift+p sftp.json
+
+{
+    "protocol": "sftp",
+    "host": "10.103.194.144",
+    "port": 17786,
+    "username": "work",
+    "password":"work",
+    "remotePath": "/home/work/dev/waimai/logistics_zb/",
+    "watcher": {
+        "files": "dist/*.{js,css}",
+        "autoUpload": false,
+        "autoDelete": false
+      },
+      "profiles" : {
+        "dev" : {
+          "host": "dev-host",
+          "remotePath" : "/dev",
+          "uploadOnSave": true
+        },
+        "prod" : {
+          "host": "prod-host",
+          "remotePath" : "/prod"
+        }
+      }
+}
+
+
+
+
+
+2.
