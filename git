@@ -1,0 +1,13 @@
+
+
+
+
+
+**********git problem*************
+(1)github clone failed!
+    error setting certificate verify locations:
+    CAfile: /usr/share/ssl/certs/ca-bundle.crt
+    
+solve:git config --system http.sslverify false
+
+(2)
