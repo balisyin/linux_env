@@ -1,5 +1,14 @@
-
-
+**************install git****************************
+wget https://github.com/git/git/archive/v2.19.0.tar.gz
+make configure
+    ./configure --prefix=/usr/local/git
+    make 
+    make install
+sudo vi /etc/bashrc     #file add at last
+export PATH=/usr/local/git/bin:$PATH
+source /etc/bashrc 
+    
+    
 
 
 **********git problem*************
