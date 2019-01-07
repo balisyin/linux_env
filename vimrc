@@ -1,6 +1,3 @@
-
-""".vimrc
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -32,7 +29,7 @@ filetype plugin indent on     " required
 
 augroup filetype
 autocmd! BufRead,BufNewFile BUILD set filetype=blade
-augroup end
+augroup end 
 
 set ts=4
 set nu
@@ -46,3 +43,22 @@ retab
 " NERDTree settings
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"NerdTree {
+     if isdirectory(expand("~/.vim/bundle/nerdtree"))
+         "map <C-e> <plug>NERDTreeToggle<CR>
+         map <C-e> :NERDTreeToggle<CR>
+         map <leader>e :NERDTreeFind<CR>
+         nmap <leader>nt :NERDTreeFind<CR>
+
+         let NERDTreeShowBookmarks=1
+         let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$','^\.svn$', '\.bzr$']
+         let NERDTreeChDirMode=0
+         let NERDTreeQuitOnOpen=1
+         let NERDTreeMouseMode=2
+         let NERDTreeShowHidden=1
+         let NERDTreeKeepTreeInNewTab=1
+         let g:nerdtree_tabs_open_on_gui_startup=0
+         let NERDTreeNodeDelimiter = "\t"
+     endif
+"}
