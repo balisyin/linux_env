@@ -1,0 +1,10 @@
+oh my zsh
+github链接：https://github.com/robbyrussell/oh-my-zsh
+
+1、使用curl安装
+
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+2、或者使用wget
+
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
